@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import DigitalClock from './components/DigitalClock';
+import CuentaAtras from './components/CuentaAtras';
+import Cronometro from './components/Cronometro';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relojitos">
+    <h3>Hora:</h3>
+    <DigitalClock/>
+    <h3>Tiempo que queda para terminar:</h3>
+    <CuentaAtras/>
+    <h3>Cronómetro:</h3>
+    <Cronometro/>
+      
     </div>
   );
 }
